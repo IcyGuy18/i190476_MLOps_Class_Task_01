@@ -8,7 +8,7 @@ pipeline {
 
     stages {    
         
-        stage('Build, Push, Live) {
+        stage('Build, Push, Live') {
             steps {
                 script{
                     dockerImage = docker.build("icyguy/i190476_i190695_mlops_a2:latest")
